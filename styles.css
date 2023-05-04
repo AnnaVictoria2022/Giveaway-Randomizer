@@ -1,0 +1,72 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1549465220-1a8b9238cd48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1140&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size: 70px;
+    font-family: 'Jost', sans-serif;
+    color: #fe28a2;
+    text-shadow: black 1px 1px 1px;
+
+}
+.container{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+}
+.participants{
+    font-size: 27px;
+    font-family: 'Jost', sans-serif;
+    color:black;
+    font-weight: normal;
+    text-align: center;
+}
+.numberOfParticipants{
+    background-color: #ffddf4;
+    border-color: white;
+    padding:15px;
+    border-radius: 20px;
+}
+.winner{
+    font-size: 27px;
+    font-family: 'Jost', sans-serif;
+    color:black;
+    font-weight: normal;
+}
+.winnerNumber{
+    color:#fe28a2;
+    text-shadow: black 2px 5px 1px;
+    font-size: 150px;
+    font-family: 'Jost', sans-serif;
+    margin-top:10px;
+    
+}
+
+@media all and (max-width:1000px){
+    h1{
+        font-size: 60px;
+    }
+    .participants, .winner{
+        font-size:25px;
+        text-align: center;
+    }
+}
+@media all and (max-width:600px){
+    h1{
+        font-size: 50px;
+    }
+    .container{
+        width:60%;
+        margin-bottom: 100px;
+    }
+    .participants, .winner{
+        font-size:20px;
+        text-align: center;
+    }
+    .winnerNumber{
+        font-size: 100px;
+    }
+}
